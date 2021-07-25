@@ -17,7 +17,7 @@ public:
     {
         if (sConfigMgr->GetOption<bool>("MyModule.Enable", false))
         {
-            ChatHandler(player->GetSession()).SendSysMessage("%s", p_time);
+            ChatHandler(player->GetSession()).SendSysMessage(p_time);
         }
     }
 };
